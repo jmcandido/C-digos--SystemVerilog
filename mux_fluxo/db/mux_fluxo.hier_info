@@ -1,0 +1,8 @@
+|mux_fluxo
+a => out.IN0
+b => out.IN0
+sel => out.IN1
+sel => out.IN1
+out << out.DB_MAX_OUTPUT_PORT_TYPE
+
+

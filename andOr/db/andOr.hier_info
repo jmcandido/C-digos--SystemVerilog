@@ -1,0 +1,9 @@
+|andOr
+X => out.OUTPUTSELECT
+A => out.IN0
+A => out.IN0
+B => out.IN1
+B => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

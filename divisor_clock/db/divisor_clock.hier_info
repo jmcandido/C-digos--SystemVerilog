@@ -1,0 +1,26 @@
+|divisor_clock
+clock_input => clock_input.IN1
+reset => reset.IN2
+S <= div:b2.clock_output
+
+
+|divisor_clock|div:b1
+reset => clock_output.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+clock_input => contador[0].CLK
+clock_input => contador[1].CLK
+clock_input => clock_output~reg0.CLK
+clock_output <= clock_output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor_clock|div:b2
+reset => clock_output.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+clock_input => contador[0].CLK
+clock_input => contador[1].CLK
+clock_input => clock_output~reg0.CLK
+clock_output <= clock_output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

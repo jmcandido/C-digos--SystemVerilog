@@ -1,0 +1,32 @@
+
+module comparador_comportamental ( input x0, x1, y0, y1, output maior, menor, igual);
+
+logic [1:0] A, B;
+
+assign {x0, x1} = A;
+assign {x0, x1} = B;
+
+//f1  -> menor
+//f2  -> igual
+//f3  -> maior;
+
+always @ (*) begin
+	maior = 0;
+	igual = 0;
+	menor = 0;
+   if(A == B)
+	 begin
+	  igual = 1;
+	 end
+	  else if (A > B)
+	   begin
+		maior = 1;	
+	   end
+   else
+		begin
+		 menor = 1;
+		 end
+	end
+endmodule
+	
+

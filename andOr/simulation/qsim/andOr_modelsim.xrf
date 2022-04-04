@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/andOr/andOr.sv
+source_file = 1, D:/Projetos/andOr/Waveform.vwf
+source_file = 1, D:/Projetos/andOr/Waveform1.vwf
+source_file = 1, D:/Projetos/andOr/Waveform2.vwf
+source_file = 1, D:/Projetos/andOr/db/andOr.cbx.xml
+design_name = andOr
+instance = comp, \out~output , out~output, andOr, 1
+instance = comp, \B~input , B~input, andOr, 1
+instance = comp, \X~input , X~input, andOr, 1
+instance = comp, \A~input , A~input, andOr, 1
+instance = comp, \out~0 , out~0, andOr, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, andOr, 1

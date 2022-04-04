@@ -1,0 +1,6 @@
+|sequencia
+clock => e_atual~1.DATAIN
+reset => e_atual~3.DATAIN
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

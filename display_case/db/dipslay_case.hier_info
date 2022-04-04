@@ -1,0 +1,34 @@
+|dipslay_case
+x1 => Equal0.IN4
+x1 => Equal1.IN4
+x1 => Equal2.IN4
+x1 => Equal3.IN4
+x1 => Equal4.IN4
+x1 => Decoder0.IN0
+x2 => Equal0.IN5
+x2 => Equal1.IN5
+x2 => Equal2.IN5
+x2 => Equal3.IN5
+x2 => Equal4.IN5
+x2 => Decoder0.IN1
+x3 => Equal0.IN6
+x3 => Equal1.IN6
+x3 => Equal2.IN6
+x3 => Equal3.IN6
+x3 => Equal4.IN6
+x3 => Decoder0.IN2
+x4 => Equal0.IN7
+x4 => Equal1.IN7
+x4 => Equal2.IN7
+x4 => Equal3.IN7
+x4 => Equal4.IN7
+x4 => Decoder0.IN3
+SA << WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+SB << WideNor1.DB_MAX_OUTPUT_PORT_TYPE
+SC << Equal4.DB_MAX_OUTPUT_PORT_TYPE
+SD << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SE << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SF << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SG << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/comparador_comportamental/comparador_comportamental.sv
+source_file = 1, D:/Projetos/comparador_comportamental/Waveform1.vwf
+source_file = 1, D:/Projetos/comparador_comportamental/Waveform2.vwf
+source_file = 1, D:/Projetos/comparador_comportamental/db/comparador_comportamental.cbx.xml
+design_name = comparador_comportamental
+instance = comp, \menor~output , menor~output, comparador_comportamental, 1
+instance = comp, \igual~output , igual~output, comparador_comportamental, 1
+instance = comp, \maior~output , maior~output, comparador_comportamental, 1
+instance = comp, \x[0]~input , x[0]~input, comparador_comportamental, 1
+instance = comp, \y[1]~input , y[1]~input, comparador_comportamental, 1
+instance = comp, \y[0]~input , y[0]~input, comparador_comportamental, 1
+instance = comp, \x[1]~input , x[1]~input, comparador_comportamental, 1
+instance = comp, \menor~0 , menor~0, comparador_comportamental, 1
+instance = comp, \Equal0~0 , Equal0~0, comparador_comportamental, 1
+instance = comp, \maior~0 , maior~0, comparador_comportamental, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, comparador_comportamental, 1

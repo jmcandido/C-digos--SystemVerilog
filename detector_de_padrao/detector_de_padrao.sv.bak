@@ -1,0 +1,59 @@
+
+	 module detector_de_padrao
+	 
+	(output reg y,
+	input clock, x, reset);
+
+	reg [1:0] estado_atual, estado_anterior;
+
+	parameter sinic = 0, s1 = 1, s11 = 2, s110 = 3;
+
+	always @ (*) begin // parte combinacional
+
+	case (estado_atual)
+	s1: y = 0;
+	s11: y = 0;
+	s110: y = 0;
+	sinic: begin
+		if (estado_anterior == s110 )
+		y = 1;
+		else y = 0;
+		end
+	endcase
+ end 
+
+	always @ (posedge clock, negedge reset) // parte sequencial
+	  if (~reset)
+		estado_atual <= A;
+		else
+			 case (estado_atual)
+		sinic: if (x == 0)
+		estado_atual <= sinic;
+		else begin
+		estado_atual <= s1; estado_anterior <= sinic; 
+	   end
+	
+		s1: if (x == 0) begin
+		estado_atual <= sinic; estado_anterior <= s1; 
+		end
+		else begin
+		estado_atual <= s11; estado_anterior <= s1; 
+		end
+	
+		C: if (x == 0) begin
+		estado_atual <= sinic; estado_anterior <= s11; 
+		end
+		else begin
+		estado_atual <= s110; estado_anterior <= s11; 
+		end
+		
+		D: if (x == 0) begin
+		estado_atual <= sinic; estado_anterior <= s110; 
+		end
+		else begin
+		estado_atual <= s110; estado_anterior <= s110; 
+		end
+	
+   endcase
+endmodule
+	

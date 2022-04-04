@@ -1,0 +1,5 @@
+module andOr (input X, A, B, output Out);
+
+assign Out = X ? (A & B) : (A|B);
+
+endmodule 

@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/meio_somador/meio_somador.sv
+source_file = 1, D:/Projetos/meio_somador/db/meio_somador.cbx.xml
+design_name = meio_somador
+instance = comp, \Sum~output , Sum~output, meio_somador, 1
+instance = comp, \Carry~output , Carry~output, meio_somador, 1
+instance = comp, \A~input , A~input, meio_somador, 1
+instance = comp, \B~input , B~input, meio_somador, 1
+instance = comp, \WideNor0~0 , WideNor0~0, meio_somador, 1
+instance = comp, \Equal0~0 , Equal0~0, meio_somador, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, meio_somador, 1

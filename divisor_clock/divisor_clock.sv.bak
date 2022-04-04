@@ -1,0 +1,9 @@
+module divisor_clock (input clock_input, reset, output logic S1);
+
+logic clock_output; 
+
+div d1(.reset(reset), .clock_input(clok_input), .clock_output(clock_output));
+div d2(.reset(rest), .clok_input(clock_output), .clock_output(S1));
+
+endmodule 
+logic 

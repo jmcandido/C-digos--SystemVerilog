@@ -1,0 +1,7 @@
+|detector_de_padrao
+S <= <GND>
+clock => ~NO_FANOUT~
+I => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+
+

@@ -1,0 +1,12 @@
+|maquina_vendas
+clock => e_atual~7.DATAIN
+A => always1.IN0
+A => always1.IN0
+A => always1.IN0
+B => always1.IN1
+B => always1.IN1
+B => always1.IN1
+reset => e_atual~9.DATAIN
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

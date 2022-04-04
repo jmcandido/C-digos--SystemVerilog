@@ -1,0 +1,45 @@
+	module questao (input clock, reset, output logic P, M, L, Y);
+
+	input H, A;
+	 
+	reg [1:0] X;
+	  
+	assign {H, A} = X;
+	
+
+	logic[1:0] e_atual;
+	logic [1:0] e_anterior;
+
+	parameter E1 = 0, E2 = 1, E3 = 2, E4 = 3;
+
+	always_comb begin 
+		case (e_atual)
+		
+		E1: P = 1; M = 0; L = 0; Y = 1;
+		E2: P = 1; M = 0; L = 1; Y = 0;
+		E3: P = 0; M = 1; L = 1; Y = 0;
+		E4: P = 0; M = 1; L = 0; Y = 1;
+		
+	endcase
+end
+
+	always_ff @ (posedge clock, negedge reset) begin
+	  if (~reset)
+		e_atual <= E1;
+		else begin
+			case (e_atual)
+			 
+			E1: begin
+				if (X == 2'b00 || 2'b11)
+					e_atual <= E1;
+				else if (X == 2'b01)
+					e_atual <= E4; e_anterior <= E1; end
+					begin
+				else if (X == 2'b10)
+					e_atual <= E2; e_anterior <= E1; end
+					end
+				end
+   endcase
+	end
+	end
+endmodule

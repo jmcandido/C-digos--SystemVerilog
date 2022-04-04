@@ -1,0 +1,7 @@
+
+State Machine - |motor_unipolar|e_atual
+Name e_atual.E4 e_atual.E3 e_atual.E2 e_atual.E1 
+e_atual.E1 0 0 0 0 
+e_atual.E2 0 0 1 1 
+e_atual.E3 0 1 0 1 
+e_atual.E4 1 0 0 1 

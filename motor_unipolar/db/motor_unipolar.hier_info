@@ -1,0 +1,13 @@
+|motor_unipolar
+clock => e_atual~2.DATAIN
+H => always1.IN0
+H => always1.IN0
+A => always1.IN1
+A => always1.IN1
+reset => e_atual~4.DATAIN
+P << P.DB_MAX_OUTPUT_PORT_TYPE
+M << P.DB_MAX_OUTPUT_PORT_TYPE
+L << L.DB_MAX_OUTPUT_PORT_TYPE
+Y << L.DB_MAX_OUTPUT_PORT_TYPE
+
+

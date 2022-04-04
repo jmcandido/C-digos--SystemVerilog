@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/mux_fluxo/mux_fluxo.sv
+source_file = 1, D:/Projetos/mux_fluxo/db/mux_fluxo.cbx.xml
+design_name = mux_fluxo
+instance = comp, \out~output , out~output, mux_fluxo, 1
+instance = comp, \sel~input , sel~input, mux_fluxo, 1
+instance = comp, \a~input , a~input, mux_fluxo, 1
+instance = comp, \b~input , b~input, mux_fluxo, 1
+instance = comp, \out~0 , out~0, mux_fluxo, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mux_fluxo, 1

@@ -1,0 +1,10 @@
+module mux_estrutural (input b, a, sel, output out);
+
+logic sel_1, sel_2, sel_n;
+
+not n1(sel_n, sel)
+and a1(sel_1, a, sel_n),
+and a2(sel_2, b, sel);
+or  o1(out, sel_1, sel_2);
+
+endmodule 

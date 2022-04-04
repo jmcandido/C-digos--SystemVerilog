@@ -1,0 +1,14 @@
+
+State Machine - |detector_de_padrao|e_anterior
+Name e_anterior.s110 e_anterior.s11 e_anterior.s1 e_anterior.sinic 
+e_anterior.sinic 0 0 0 0 
+e_anterior.s1 0 0 1 1 
+e_anterior.s11 0 1 0 1 
+e_anterior.s110 1 0 0 1 
+
+State Machine - |detector_de_padrao|e_atual
+Name e_atual.s110 e_atual.s11 e_atual.s1 e_atual.sinic 
+e_atual.sinic 0 0 0 0 
+e_atual.s1 0 0 1 1 
+e_atual.s11 0 1 0 1 
+e_atual.s110 1 0 0 1 

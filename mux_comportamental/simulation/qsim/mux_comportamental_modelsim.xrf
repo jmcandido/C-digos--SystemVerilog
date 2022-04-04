@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/mux_comportamental/mux_comportamental.sv
+source_file = 1, D:/Projetos/mux_comportamental/Waveform.vwf
+source_file = 1, D:/Projetos/mux_comportamental/Waveform1.vwf
+source_file = 1, D:/Projetos/mux_comportamental/db/mux_comportamental.cbx.xml
+design_name = mux_comportamental
+instance = comp, \out~output , out~output, mux_comportamental, 1
+instance = comp, \sel~input , sel~input, mux_comportamental, 1
+instance = comp, \b~input , b~input, mux_comportamental, 1
+instance = comp, \a~input , a~input, mux_comportamental, 1
+instance = comp, \out~0 , out~0, mux_comportamental, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mux_comportamental, 1

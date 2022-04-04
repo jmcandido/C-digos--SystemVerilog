@@ -1,0 +1,6 @@
+
+State Machine - |sequencia|e_atual
+Name e_atual.s00 e_atual.s10 e_atual.s01 
+e_atual.s00 0 0 0 
+e_atual.s01 1 0 1 
+e_atual.s10 1 1 0 

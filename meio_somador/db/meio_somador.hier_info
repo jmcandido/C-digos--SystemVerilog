@@ -1,0 +1,11 @@
+|meio_somador
+A => Equal0.IN2
+A => Equal1.IN2
+A => Equal2.IN2
+B => Equal0.IN3
+B => Equal1.IN3
+B => Equal2.IN3
+Sum <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+
+

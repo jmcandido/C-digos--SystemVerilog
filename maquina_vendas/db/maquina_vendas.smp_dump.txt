@@ -1,0 +1,10 @@
+
+State Machine - |maquina_vendas|e_atual
+Name e_atual.E150 e_atual.E125 e_atual.E100 e_atual.E75 e_atual.E50 e_atual.E25 e_atual.E0 
+e_atual.E0 0 0 0 0 0 0 0 
+e_atual.E25 0 0 0 0 0 1 1 
+e_atual.E50 0 0 0 0 1 0 1 
+e_atual.E75 0 0 0 1 0 0 1 
+e_atual.E100 0 0 1 0 0 0 1 
+e_atual.E125 0 1 0 0 0 0 1 
+e_atual.E150 1 0 0 0 0 0 1 

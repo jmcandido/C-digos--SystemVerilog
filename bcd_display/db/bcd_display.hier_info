@@ -1,0 +1,38 @@
+|bcd_display
+x1 => sa.IN0
+x1 => sd.IN1
+x1 => sf.IN1
+x1 => sg.IN1
+x2 => sa.IN0
+x2 => sc.IN1
+x2 => sd.IN0
+x2 => sf.IN0
+x2 => sg.IN0
+x2 => sb.IN1
+x2 => sd.IN0
+x2 => sd.IN0
+x3 => sa.IN1
+x3 => sb.IN0
+x3 => sd.IN0
+x3 => sd.IN1
+x3 => sg.IN1
+x3 => sc.IN0
+x3 => sd.IN1
+x3 => sf.IN0
+x4 => sa.IN1
+x4 => sb.IN1
+x4 => sc.IN1
+x4 => sd.IN1
+x4 => sd.IN1
+x4 => sd.IN1
+x4 => sf.IN1
+x4 => sf.IN1
+sa << sa.DB_MAX_OUTPUT_PORT_TYPE
+sb << sb.DB_MAX_OUTPUT_PORT_TYPE
+sc << sc.DB_MAX_OUTPUT_PORT_TYPE
+sd << sd.DB_MAX_OUTPUT_PORT_TYPE
+se << se.DB_MAX_OUTPUT_PORT_TYPE
+sf << sf.DB_MAX_OUTPUT_PORT_TYPE
+sg << sg.DB_MAX_OUTPUT_PORT_TYPE
+
+

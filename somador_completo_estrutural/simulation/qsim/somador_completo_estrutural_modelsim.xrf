@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projetos/somador_completo_estrutural/somador_completo_estrutural.sv
+source_file = 1, D:/Projetos/somador_completo_estrutural/Waveform.vwf
+source_file = 1, D:/Projetos/somador_completo_estrutural/Waveform1.vwf
+source_file = 1, D:/Projetos/somador_completo_estrutural/db/somador_completo_estrutural.cbx.xml
+design_name = somador_completo_estrutural
+instance = comp, \Cout~output , Cout~output, somador_completo_estrutural, 1
+instance = comp, \S~output , S~output, somador_completo_estrutural, 1
+instance = comp, \A~input , A~input, somador_completo_estrutural, 1
+instance = comp, \B~input , B~input, somador_completo_estrutural, 1
+instance = comp, \Cin~input , Cin~input, somador_completo_estrutural, 1
+instance = comp, \g4~0 , g4~0, somador_completo_estrutural, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, somador_completo_estrutural, 1
