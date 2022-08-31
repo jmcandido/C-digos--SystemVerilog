@@ -14,6 +14,4 @@ assign sf = x1 | (x2 & !x3) | (!x3 & !x4) | (!x4 & x2);
 
 assign sg = x1 | (x3 & !x4) | (x2 ^ x3);
 
-
-
 endmodule 
